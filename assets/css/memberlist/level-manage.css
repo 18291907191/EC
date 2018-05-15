@@ -1,0 +1,223 @@
+.content {
+    padding: 0!important;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
+.content .product-type{
+    flex: 1;
+    width:100%;
+    display: flex;
+}
+.content .product-type .product-left{
+    height:100%;
+    width:219px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+.content .product-left h2{
+    width:100%;
+    background: #62a8d1;
+    font-size:16px;
+    color:#fff;
+    line-height: 40px;
+    text-indent: 12px;
+    font-weight: normal;
+    height:40px;
+}
+.content .product-left .type-lists{
+    box-sizing: border-box;
+    flex: 1;
+    width:100%;
+    color:#333;
+    overflow-y: auto;
+    text-indent: 10px;
+    line-height: 18px;
+    font-size: 13px;
+}
+.content .product-left .type-lists li {
+    line-height: 34px;
+}
+.content .product-left .type-lists li a {
+    vertical-align: bottom;
+    color: #333;
+}
+.content  .type-lists li:hover a{
+    color: #F90;
+    text-decoration: underline;
+}
+.content .product-type .product-right{
+    flex:1;
+    height:100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.product-right .add-goods{
+    font-weight:100;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size: 18px;
+    color:#333;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+.product-right .form-one{
+    padding-top:20px;
+    padding-left:10px;
+    flex: 1;
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: center;
+}
+.form-one .form-con{
+    width:500px;
+    height:100%;
+    margin:30px auto;
+}
+.form-con .classify-type{
+    width:100%;
+    padding:10px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border:1px solid #ddd;
+}
+.form-con .classify-type a{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color:#fff;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+.form-con .classify-type a:nth-of-type(1){
+    background: #ffb752;
+}
+.form-con .classify-type a:nth-of-type(2){
+    background: #629b58;
+}
+.form-con .classify-type a:nth-of-type(3){
+    background: #b74635;
+}
+.form-con .about-input{
+    width:100%;
+    float: left;
+    padding:10px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+.form-con .about-input label{
+    display: block;
+    width:80px;
+    line-height: 35px;
+    text-align: right;
+    vertical-align: top;
+    float: left;
+}
+.form-con .about-input .input-con{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: inherit;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(213, 213, 213);
+    padding: 5px 4px;
+}
+.form-con .input-con:focus{
+    border-color: #f59942;
+}
+.form-con .about-input textarea{
+    width:380px;
+    height:100px;
+    resize: none;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    border:1px solid #d5d5d5;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.form-con .about-input textarea:focus{
+    border-color: #f59942;
+}
+.form-con textarea::-webkit-input-placeholder{
+    color:red;
+    font-family: inherit;
+    font-size: 14px;
+    color:#999;
+}
+.ready-con{
+    width:100%;
+    float: left;
+    padding-left: 90px;
+    font-size: 12px;
+    text-align: left;
+}
+.reset-sub{
+    width:100%;
+    text-align: center;
+}
+.reset-sub input{
+    color:#fff;
+    border-radius: 5px;
+    background: #1b6aaa;
+    border:0;
+    height:38px;
+    line-height: 38px;
+    text-align: center;
+    width:62px;
+}
+.content .product-left .none{
+    display: block;
+    width: 23px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right:0;
+    top:50%;
+    border-radius-topleft: 5px;
+    border-radius-bottomleft: 5px;
+    z-index:999;
+    background:url(../../images/level-manage/leftnone.jpg) no-repeat;
+}
+.content .product-right .bebig{
+    z-index: 999;
+    width: 23px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left:0;
+    top:50%;
+    border-radius-topleft: 5px;
+    border-radius-bottomleft: 5px;
+    background:url(../../images/level-manage/rightshow.jpg) no-repeat;
+    display: none;
+}
+
+.m-modal {
+    position: fixed!important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .2);
+}

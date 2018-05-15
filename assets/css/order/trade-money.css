@@ -1,0 +1,166 @@
+
+.money{
+    width: 100%;
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.moneySum{
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    margin: 16px auto 14px;
+}
+.moneys,.moneyss{
+    float: left;
+    padding-top: 32px;
+    text-align: center;
+    border-right: 1px solid #dddddd;
+}
+.moneys{
+    width: 258px;
+}
+.moneys p:first-of-type{
+    color: red;
+    font-size: 18px;
+    padding-bottom: 22px;
+}
+.moneys p:last-of-type{
+    color: #999999;
+    font-size: 12px;
+    line-height: 30px;
+    background: #ededed;
+    border-top: 1px dashed #dddddd;
+}
+.moneyss{
+    width: 200px;
+}
+.moneyss p:first-of-type{
+    color: red;
+    font-size: 18px;
+    padding-bottom: 22px;
+}
+.moneyss p:first-of-type span{
+    font-size: 12px;
+}
+.moneyss p:last-of-type{
+    color: #999999;
+    font-size: 12px;
+    line-height: 30px;
+    background: #ededed;
+    border-top: 1px dashed #dddddd;
+}
+.stat{
+    width: 86px;
+    height: 64px;
+    float: left;
+    background: #6fb3e0;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 17px;
+    margin-left: 14px;
+    padding-top: 10px;
+}
+.stat i{
+    font-size: 16px;
+}
+.orderSum{
+    line-height: 48px;
+    border: 1px solid #dddddd;
+    margin: 0 auto 32px;
+    padding-right: 5px;
+}
+.orderSum a{
+    display: inline-block;
+    width: 76px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    border-radius:5px;
+    margin-right: 5px;
+}
+.orderSum a:first-of-type{
+     background: #4f99c6;
+    margin-left: 5px;
+    border: 5px solid #4f99c6;
+ }
+.orderSum a:first-of-type:hover{
+     border: 5px solid #6fb3e0;
+ }
+.orderSum a:nth-of-type(2){
+    background: #b74635;
+    border: 5px solid #b74635;
+}
+.orderSum a:nth-of-type(2):hover{
+    border: 5px solid #d15b47;
+}
+.orderSum a:nth-of-type(3){
+    background: #b74635;
+    border: 5px solid #b74635;
+}
+.orderSum a:nth-of-type(3):hover{
+    border: 5px solid #d15b47;
+}
+.orderSum span{
+    float: right;
+    font-size: 11px;
+}
+.record{
+    width: 100%;
+}
+.row{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.row select{
+    width: 68px;
+    height: 23px;
+    border: 1px solid #dddddd;
+}
+.recordTable{
+    width: 100%;
+    line-height: 35px;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+.recordTable th{
+    color: #307ecc;
+    background: #f2f2f2;
+    border: 1px solid #dddddd;
+}
+.recordTable tr td{
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+.recordTable tr:nth-of-type(2n){
+    background: #f9f9f9;
+}
+.page{
+    width: 100%;
+    line-height: 32px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.page p{
+    font-size: 14px;
+    float: left;
+}
+.page div{
+    float: right;
+}
+.page div a{
+   float: left;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    background: #f9f9f9;
+    text-align: center;
+    font-size: 12px;
+}
+.page div a:nth-of-type(2){
+    width: 30px;
+    background: #6faed9;
+    color: white;
+}

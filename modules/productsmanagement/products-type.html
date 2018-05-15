@@ -1,0 +1,335 @@
+<div class="type-content">
+    <div class="find">
+        <label>产品名称<input type="text" placeholder="输入品牌名称"></label>
+        <label>添加时间<input type="text" class="date"></label>
+        <button type="submit"><i class="iconfont icon-search"></i>查询</button>
+    </div>
+    <div class="product-con">
+        <ul class="product-list">
+            <li><a href="#!/addproducts" class="add"><i class="iconfont icon-plus1"></i>添加商品</a></li>
+            <li class="delete"><i class="iconfont icon-cc-trash"></i>批量删除</li>
+            <div class="number"><p>共：件商品</p></div>
+        </ul>
+        <div class="product-type">
+            <div class="product-left">
+                <h2>
+                    产品列表类型
+                </h2>
+                <ul class="type-lists">
+                    <li>商城分类列表
+                        <ul class="forward">
+                            <li>蔬菜水果
+                                <ul class="comcrete">
+                                    <li>苹果</li>
+                                    <li>青菜</li>
+                                    <li>樱桃</li>
+                                    <li>西瓜</li>
+                                </ul>
+                            </li>
+                            <li>手机数码
+                                <ul class="comcrete">
+                                    <li>手机</li>
+                                    <li>照相机</li>
+                                </ul>
+                            </li>
+                            <li>电脑配件
+                                <ul class="comcrete">
+                                    <li>鼠标</li>
+                                    <li>键盘</li>
+                                    <li>U盘</li>
+                                </ul>
+                            </li>
+                            <li>服装鞋帽
+                                <ul class="comcrete">
+                                    <li>裙装</li>
+                                    <li>上衣</li>
+                                    <li>夏装</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="none"></span>
+            </div>
+            <div class="product-right">
+                <div class="show-con">
+                    <p class="type-num">
+                        每页显示条数：
+                        <select>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                    </p>
+                    <label>搜索：<input type="text"></label>
+                </div>
+                <div class="tablediv">
+                    <table border="0" cellpadding="0" cellspacing="0" class="type-table display" id="table_id_example">
+                        <tr>
+                            <th width="25px" class="quan"><input type="checkbox"></th>
+                            <th width="80px">产品编号</th>
+                            <th width="250px">产品名称</th>
+                            <th width="100px">原价格</th>
+                            <th width="100px">现价</th>
+                            <th width="100px">所属地区/国家</th>
+                            <th width="180px">加入时间</th>
+                            <th width="80px">审核状态</th>
+                            <th width="70px">状态</th>
+                            <th width="200px">操作</th>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">110</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">111</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">112</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">113</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">114</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">115</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">116</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">117</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">118</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">119</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">120</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">121</td>
+                            <td width="250px">小米 Max 全网通 高配版 3GB内存 64GB ROM 金色 移动联通电信4G手机Y</td>
+                            <td width="100px">5467</td>
+                            <td width="100px">4525</td>
+                            <td width="100px">法国</td>
+                            <td width="180px">2014-6-11 11:11:42</td>
+                            <td width="80px">通过</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="page"></div>
+                </div>
+                <span class="bebig"></span>
+            </div>
+        </div>
+    </div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure imsure">确定</button>
+                <button class="m-btn-cancel imcancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>

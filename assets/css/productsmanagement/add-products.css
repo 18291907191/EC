@@ -1,0 +1,257 @@
+.add-content{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+.add-content .product-type{
+    flex: 1;
+    width:100%;
+    display: flex;
+}
+.add-content .product-type .product-left{
+    height:100%;
+    width:219px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    border-right: 1px solid #ddd;
+}
+.add-content .product-left h2{
+    width:100%;
+    background: #62a8d1;
+    font-size:16px;
+    color:#fff;
+    line-height: 40px;
+    text-indent: 12px;
+    font-weight: normal;
+    height:40px;
+}
+.add-content .product-left .type-lists{
+    padding-top:16px;
+    padding-left:20px;
+    box-sizing: border-box;
+    flex: 1;
+    width:100%;
+    font-size: 12px;
+    color:#333;
+    overflow-y: auto;
+    text-indent: 29px;
+    line-height: 18px;
+}
+.add-content .open{
+    background: url(../../images/products/open.jpg) no-repeat 0px 0px;
+}
+.add-content .close{
+    background: url(../../images/products/close.jpg) no-repeat 0px 0px;
+}
+.add-content .forward{
+    margin-left:18px;
+}
+.add-content .file{
+    background: url(../../images/products/file.jpg) no-repeat 0px center;
+}
+.add-content .comcrete{
+    margin-left:20px;
+    text-indent:16px;
+}
+.add-content .product-type .product-right{
+    flex:1;
+    height:100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.product-right .add-goods{
+    font-weight:100;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size: 18px;
+    color:#333;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: url(../../images/products/addgoods.jpg) repeat-x 0px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.product-right .form{
+    padding-top:20px;
+    padding-left:10px;
+    flex: 1;
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.product-right .about-input{
+    width:100%;
+    margin-bottom: 15px;
+}
+.product-right .about-input label{
+    display: block;
+    width:80px;
+    line-height: 35px;
+    /*padding-left: 20px;*/
+    text-align: right;
+}
+.product-right .form .input-con{
+    width:90%;
+    display: block;
+    height:27px;
+    border:1px solid #d5d5d5;
+    outline: none;
+}
+.product-right .form .input-con:focus{
+    border-color: #f59942;
+}
+.product-right .input-list{
+    width:100%;
+}
+.product-right .input-list li{
+    width:33.33%;
+    float: left;
+    margin-bottom: 15px;
+}
+.product-right .input-list li label{
+    display:inline-block;
+    width:80px;
+}
+.product-right .input-list li input,.input-list li select {
+    width: 35%;
+    color: #858585;
+    border: 1px solid #d5d5d5;
+    padding: 5px 4px;
+    margin-left: 10px;
+    line-height: 1.2;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+.product-right .input-list li input:focus{
+    border-color: #f59942;
+}
+.product-right .input-list li select:focus{
+    border-color: #f59942;
+}
+.product-right .about-input .con-main{
+    width:90%;
+    border:1px solid #d5d5d5;
+    outline: none;
+    min-height:250px;
+    resize: none;
+    color: #858585;
+    padding: 5px 4px;
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+.product-right .about-input .take{
+    width:100%;
+    font-size:14px;
+}
+.product-right .pic-content{
+    width:90%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #838383;
+    font-size: 12px;
+    margin-top: 10px;
+    border: solid 1px #ddd;
+}
+.product-right .pic-content .cut{
+    border: 3px dashed #e6e6e6;
+    min-height: 238px;
+    padding-top: 158px;
+    text-align: center;
+    background: url(../../images/products/pic.png) center 93px no-repeat;
+    color: #cccccc;
+    font-size: 18px;
+    position: relative;
+}
+.product-right .cli-sel{
+    font-size: 18px;
+    background: #00b7ee;
+    border-radius: 3px;
+    line-height: 44px;
+    padding: 0 30px;
+    color: #fff;
+    display: inline-block;
+    margin: 20px auto;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.product-right .select-con{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.product-right .set-file{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 168px;
+    height: 44px;
+    overflow: hidden;
+    bottom: auto;
+    right: auto;
+}
+
+.product-right .picfile{
+    height:44px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    opacity: 0;
+    /*clip: rect(1px 1px 1px 1px);*/
+}
+.product-right .pull{
+    width:100%;
+}
+.product-right .about-input .label{
+    display:block;
+    width:22px;
+    height:35px;
+    position: relative;
+    line-height: 26px;
+    text-align: center;
+    float: left;
+    background: url(../../images/products/not-allow.png) no-repeat 0px center;
+    margin-left:20px;
+}
+.product-right .about-input .on{
+    line-height: 26px;
+    background: url(../../images/products/allow.png) no-repeat 0px center;
+}
+.product-right .about-input .label .check{
+    position: absolute;
+    left:-9999px;
+}
+.product-right .save-sub{
+    background-color: #428bca;
+}
+.product-right .form .btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height:28px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    border:none;
+    color:#fff;
+    margin-right:10px;
+}
+.product-right .button{
+    width:360px;
+    margin:0 auto;
+}
+.product-right .save{
+    background: #ffb752;
+}
+.cancel{
+    background: #abbac3;
+}
+

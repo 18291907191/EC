@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="com.ec">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/iconfonts/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/systemindex/index.css">
+    <link rel="stylesheet" href="assets/css/memberlist/memberlist.css">
+    <link rel="stylesheet" href="assets/css/memberlist/level-manage.css">
+    <link rel="stylesheet" href="assets/css/productsmanagement/products-type.css">
+    <link rel="stylesheet" href="assets/css/productsmanagement/add-products.css">
+    <link rel="stylesheet" href="assets/css/productsmanagement/brand-management.css">
+    <link rel="stylesheet" href="assets/css/productsmanagement/add-brand.css">
+    <link rel="stylesheet" href="assets/css/productsmanagement/products-management.css">
+    <link rel="stylesheet" href="assets/css/order/order-management.css">
+    <link rel="stylesheet" href="assets/css/order/trade-money.css">
+    <link rel="stylesheet" href="assets/css/order/trademessage.css">
+    <link rel="stylesheet" href="assets/css/order/refund-management.css">
+    <link rel="stylesheet" href="assets/css/pay/payment-method.css">
+    <link rel="stylesheet" href="assets/css/adminmanage/admin-list.css">
+    <link rel="stylesheet" href="assets/css/adminmanage/personal-info.css">
+    <link rel="stylesheet" href="assets/css/picturemanagement/advertisement.css">
+    <link rel="stylesheet" href="assets/css/picturemanagement/pic-classify.css">
+    <link rel="stylesheet" href="assets/css/shopmanagement/shop-tabluation.css">
+    <!--<link rel="stylesheet" href="assets/css/adminmanage/">-->
+    <title>电商后台管理系统</title>
+</head>
+<body>
+<!--头部-->
+<header><a class="logo" href="#!/system-index"><h1 style="height: 100%;color:#fff; text-indent: 20px;font-weight:300;line-height: 75px">分期乐后台管理系统</h1></a>
+        <div class="nav">
+            <div class="user-msg">
+                <a class="msg" href="javascript:;"><i class="iconfont icon-bellalt"></i><span class="sign">8</span></a>
+                <!--下拉列表-->
+                <ul class="msg-drop">
+                    <li>8条通知</li>
+                    <li><a href="javascript:;">最新消息</a></li>
+                    <li><a href="javascript:;">切换为编辑登录..</a></li>
+                    <li><a href="javascript:;">新订单</a></li>
+                    <li><a href="javascript:;">用户消息</a></li>
+                    <li><a href="javascript:;">查看所有通知 <i class="iconfont icon-right-sorting-o"></i></a></li>
+                </ul>
+            </div>
+            <span class="time"></span>
+            <div class="user-info">
+                <a class="user-tit" href="javascript:;"><small>欢迎光临,</small><span id="userlevel"></span><i class="iconfont icon-down1"></i></a>
+            <!--下拉列表-->
+                <ul class="user-drop">
+                    <li><a href="#!/systemsettings">网站设置</a></li>
+                    <li><a href="#!/personal-info">个人资料</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </div>
+        </div>
+</header>
+<!--内容 -->
+<section>
+    <!--侧边栏-->
+    <aside>
+        <div class="aside-hd">
+            <div class="aside-hdshow">
+                <a  class="signal" href="javascript:;"><i class="iconfont icon-signal"></i></a>
+                <a class="pencil" href="javascript:;"><i class="iconfont icon-pencil"></i></a>
+                <a class="group" href="javascript:;"><i class="iconfont icon-group"></i></a>
+                <a class="set" href="javascript:;"><i class="iconfont icon-cogs"></i></a>
+            </div>
+            <div class="aside-hdhide">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="aside-nav">
+            <ul class="aside-list">
+                <li><a href="#!/index"><i class="iconfont icon-home"></i>系统首页</a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-desktop"></i>产品管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/productstype">产品列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/brandmanagement">品牌管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/productsmanagement">分类管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-picture"></i>图片管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/advertisement">广告管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/picclassify">分类管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-list"></i>交易管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/tradeMessage">交易信息<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/dealOrder">交易订单(图)<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/orderManagement">订单管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/tradeMoney">交易金额<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/orderProcessing">订单处理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/refundManagement">退款管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-creditcard"></i>支付管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/accountManagement">账户管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/paymentMethod">支付方式<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="javascript:;">支付配置<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-user"></i>会员管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/member-list">会员列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/level-manage">等级管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/member-record-manage">会员记录管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-laptop"></i>店铺管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/shoptabulation">店铺列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="javascript:;">店铺审核<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-commentsalt"></i>消息管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/messagelist">留言列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/advicefeedback">意见反馈<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-bookmark"></i>文章管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/articlelist">文章列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/classifymanagement">分类列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-cogs"></i>系统管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/systemsettings">系统设置<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/systemcolumnmanagement">系统栏目管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/systemlog">系统日志<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-group"></i>管理员管理<span><i class="iconfont icon-down"></i></span></a>
+                    <ul>
+                        <li><a href="#!/root-manage">权限管理<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/admin-list">管理员列表<i class="iconfont icon-right-sorting-o"></i></a></li>
+                        <li><a href="#!/personal-info">个人信息<i class="iconfont icon-right-sorting-o"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="iconlist">
+                <li><a href="javascript:;"><i class="iconfont icon-home"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-desktop"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-picture"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-list"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-creditcard"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-user"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-laptop"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-commentsalt"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-bookmark"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-cogs"></i></a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-group"></i></a></li>
+            </ul>
+        </div>
+        <div class="aside-fot"><i class="iconfont icon-right-sorting-o"></i></div>
+    </aside>
+    <!--主体内容-->
+    <div class="main">
+        <div class="main-top">
+            <ul>
+                <li><i class="iconfont icon-home"></i><a href="javascript:;">首页</a>&nbsp;<i class="iconfont icon-left"></i></li>
+                <li class="aside-cont"><a href=""></a></li>
+            </ul>
+        </div>
+        <div ng-view class="wraper"></div>
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <p class="p-l">版权所有：XXXX 苏ICP备11011739号</p>
+    <p class="p-r">地址：XXXX 邮编：XXXX 技术支持：XXXX</p>
+</footer>
+<!--angular-->
+<script src="assets/libs/angular.js"></script>
+<!--angular路由-->
+<script src="assets/libs/angular-route.js"></script>
+<!--根模块-->
+<script src="app.js"></script>
+<!--jquery框架-->
+<script src="assets/libs/jquery.js"></script>
+<!--系统设置-选项卡插件-->
+<script src="assets/libs/jquery.tabso_yeso.js"></script>
+<!--路由配置-->
+<script src="router/com.ec.router.js"></script>
+<!--echarts-->
+<script src="assets/libs/echarts.js"></script>
+<!--cookie-->
+<script src="assets/libs/cookieTools.js"></script>
+<!--共用部分-->
+<script src="assets/js/common.js"></script>
+<!--系统首页-->
+<script src="modules/systemindex/system-index.js"></script>
+<!--会员管理-->
+    <!--会员列表-->
+<script src="modules/membermanage/member-list.js"></script>
+    <!--等级管理-->
+<script src="modules/membermanage/level-manage.js"></script>
+    <!--会员记录管理-->
+<script src="modules/membermanage/member-record-manage.js"></script>
+<!--管理员管理-->
+    <!--权限管理-->
+<script src="modules/adminmanage/root-manage.js"></script>
+    <!--管理员列表-->
+<script src="modules/adminmanage/admin-list.js"></script>
+    <!--个人信息-->
+<script src="modules/adminmanage/personal-info.js"></script>
+
+<!--产品类型路由配置-->
+<script src="modules/productsmanagement/products-type.js"></script>
+<!--产品类型js方法-->
+<!--<script src="assets/js/productsmanagement/productsType.js"></script>-->
+<!--添加商品路由配置-->
+<script src="modules/productsmanagement/add-products.js"></script>
+<!--品牌管理路由配置-->
+<script src="modules/productsmanagement/brand-management.js"></script>
+<!--添加品牌路由配置-->
+<script src="modules/productsmanagement/add-brand.js"></script>
+<!--产品分类管理路由配置-->
+<script src="modules/productsmanagement/products-management.js"></script>
+
+<!--交易金额-->
+<script src="modules/trademanage/trade-money.js"></script>
+<!--交易信息-->
+<script src="modules/trademanage/trade-message.js"></script>
+<!--订单管理-->
+<script src="modules/trademanage/order-management.js"></script>
+<!--订单处理-->
+<script src="modules/trademanage/order-processing.js"></script>
+<!--退款管理-->
+<script src="modules/trademanage/refund-management.js"></script>
+<!--交易订单（图）-->
+<script src="modules/trademanage/deal-order.js"></script>
+<!--账户管理-->
+<script src="modules/paymentmanagement/account-management.js"></script>
+<!--支付方式-->
+<script src="modules/paymentmanagement/payment-method.js"></script>
+<!--highcharts-->
+<script src="./assets/libs/highcharts.js"></script>
+<!--echarts-->
+<!--<script src="./assets/echarts.js"></script>-->
+<script src="./assets/libs/china-map.js"></script>
+<!--时间插件-->
+<script src="./assets/libs/lyz.calendar.min.js"></script>
+
+<!--留言列表-->
+<script src="modules/messagemanagement/message-list.js"></script>
+<!--意见反馈-->
+<script src="modules/messagemanagement/advice-feedback.js"></script>
+<!--文章列表-->
+<script src="modules/articlemanagement/article-list.js"></script>
+<!--分类管理-->
+<script src="modules/articlemanagement/classify-management.js"></script>
+<!--系统设置-->
+<script src="modules/systemmanagement/system-settings.js"></script>
+<!--系统栏目管理-->
+<script src="modules/systemmanagement/system-column-management.js"></script>
+<!--系统日志-->
+<script src="modules/systemmanagement/system-log.js"></script>
+<!--广告管理配置路由-->
+<script src="modules/picturemanagement/advertisement.js"></script>
+<!--图片分类管理配置路由-->
+<script src="modules/picturemanagement/pic-classify.js"></script>
+<!--店铺列表管理配置路由-->
+<script src="modules/shopmanagement/shop-tabulation.js"></script>
+</body>
+</html>

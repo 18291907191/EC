@@ -1,0 +1,132 @@
+<div class="brand-mag">
+    <div class="brand-find">
+        <label>产品名称<input type="text" placeholder="输入品牌名称"></label>
+        <label>添加时间
+            <input type="text" class="date">
+            <select>
+                <option>国内品牌</option>
+                <option>国外品牌</option>
+            </select>
+        </label>
+        <button type="submit"><i class="iconfont icon-search"></i>查询</button>
+    </div>
+    <div class="brand-con">
+        <ul class="brand-list">
+            <li><a href="#!/addbrand" class="add"><i class="iconfont icon-plus1"></i>添加品牌</a></li>
+            <li class="delete"><i class="iconfont icon-cc-trash"></i>批量删除</li>
+            <li class="internal"></i>国内品牌</li>
+            <li class="external">国外品牌</li>
+            <div class="number"><p>共：个品牌</p></div>
+        </ul>
+        <div class="brand-box">
+            <div class="suibian">
+                <div class="brand-left"></div>
+                <span class="none"></span>
+            </div>
+            <div class="brand-right">
+                <div class="show-con">
+                    <p class="type-num">
+                        每页显示条数：
+                        <select>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                    </p>
+                    <label>搜索：<input type="text"></label>
+                </div>
+                <div class="tablediv">
+                    <table border="0" cellpadding="0" cellspacing="0" class="brand-table">
+                        <tr>
+                            <th width="25px" class="quan"><input type="checkbox"></th>
+                            <th width="80px">ID</th>
+                            <th width="50px">排序</th>
+                            <th width="120px">品牌LOGO</th>
+                            <th width="120px">品牌名称</th>
+                            <th width="130px">所属地区/国家</th>
+                            <th width="350px">描述</th>
+                            <th width="180px">加入时间</th>
+                            <th width="70px">状态</th>
+                            <th width="200px">操作</th>
+                        </tr>
+                        <tr>
+                            <td width="25px"><input type="checkbox"></td>
+                            <td width="80px">45631</td>
+                            <td width="50px">
+                                <input type="text" value="1" style="width:60px;height:28px;">
+                            </td>
+                            <td width="120px"><img src="assets/images/products/olay.jpg"></td>
+                            <td width="120px">玉兰油OLAY</td>
+                            <td width="130px">法国</td>
+                            <td width="350px">玉兰油OLAY，是宝洁公司全球著名的护肤品牌，OLAY以全球高科技护肤研发技术为后盾......</td>
+                            <td width="80px">2014-6-11 11:11:42</td>
+                            <td width="70px" class="state"><a href="javascript:;">已启用</a></td>
+                            <td width="200px" class="operate">
+                                <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                                <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                                <a href="javascript:;" class="ddd btn2"><i class="iconfont icon-cc-trash"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <span class="bebig"></span>
+            </div>
+        </div>
+    </div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure imsure">确定</button>
+                <button class="m-btn-cancel imcancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>

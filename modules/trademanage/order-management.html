@@ -1,0 +1,152 @@
+<div class="orderManagement">
+
+     <div class="percent">
+           <div class="shopPercent">购物产品比例</div>
+           <div id="quanquan" style="height:200px;overflow: hidden"></div>
+     </div>
+    <div class="boxss">
+        <ul class="orderList">
+            <p>订单类型分类</p>
+            <div class="hideSpan"><span></span></div>
+            <div class="showSpan"><span></span></div>
+            <li><i class="iconfont icon-list1"></i>全部订单
+                <ul>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">食品类 <span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">数码配件<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">手机<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">电脑<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">厨房用品<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">电子用品<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">红钻会员<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">家用电器<span>(0)</span></a></li>
+                    <li><i class="iconfont icon-stickynote"></i><a href="">卫浴<span>(0)</span></a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="tableDiv">
+
+            <form action="" class="orderForm">
+                <div>订单编号<input type="text" placeholder="订单编号"></div>
+                <div>时间<input id="txtEndDate"/></div>
+                <div><input type="submit" value="查询"></div>
+                <div>每页显示条数：
+                    <select name="" id="">
+                        <option value="10">10</option>
+                        <option value="10">25</option>
+                        <option value="10">50</option>
+                    </select>
+                </div>
+            </form>
+            <table class="managementTable">
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>订单编号</th>
+                    <th>产品名称</th>
+                    <th>总价</th>
+                    <th>优惠</th>
+                    <th>订单时间</th>
+                    <th>所属类型</th>
+                    <th>数量</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr ng-repeat="p in orderList">
+                <td><input type="checkbox" class="checkboxs"></td>
+                    <td>{{p.shopId}}</td>
+                    <td>
+                        <img ng-src="{{p.shopPic}}" alt="" class="tdImg">
+                    </td>
+                    <td>{{p.shopName}}</td>
+                    <td>{{p.shopPrice}}</td>
+                    <td>{{p.shopPeriods}}</td>
+                    <td>{{p.shopPeriodsNumber}}</td>
+                    <td>{{p.Color}}</td>
+                    <td><span>{{p.status}}</span></td>
+                    <td class="operate">
+                        <a href="javascript:;" title="发货" class="ase"><i class="iconfont icon-cubes"></i></a>
+                        <a href="javascript:;" title="订单详细" class="arep"><i class="iconfont icon-list"></i></a>
+                        <a href="javascript:;" title="删除" class="ddd btn2"><i class="iconfont icon-cc-trash"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="managementShadow">
+        <div class="managementShadowChild">
+            <div class="shipments"><p>发货</p></div>
+            <div class="courierName">
+                <div class="form-group"><label for="">快递公司</label>
+                    <select name="" id="">
+                        <option value="--选择快递--">--选择快递--</option>
+                        <option value="中通快递">中通快递</option>
+                        <option value="圆通快递">圆通快递</option>
+                        <option value="韵达快递">韵达快递</option>
+                        <option value="顺丰快递">顺丰快递</option>
+                        <option value="天天快递">天天快递</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="">快递号  </label><input type="text" placeholder="快递号" class="expressNum"></div>
+                <div class="form-group"><label for="">货到付款</label><input type="checkbox"></div>
+            </div>
+            <div class="returnA">
+                <a href="javascript:;" class="affirmExpress">确定</a><a href="javascript:;" class="cansel">取消</a>
+            </div>
+        </div>
+    </div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog" style="opacity: 1">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>

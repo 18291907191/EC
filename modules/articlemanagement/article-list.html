@@ -1,0 +1,171 @@
+
+<div class="article-list">
+    <div class="rbtnn1 "></div>
+    <div class="lbtnn1"></div>
+    <div class="article-classify">
+        <div class="title">
+            <h4 class="article-title">所属文章类</h4>
+        </div>
+        <div class="content-bottom">
+            <ul>
+                <li><i class="iconfont icon-list"></i><a href="">全部<b>(235)</b></a></li>
+                <li><i class="iconfont icon-newspapero"></i><a href="">帮助中心<b>(0)</b></a></li>
+                <li><i class="iconfont icon-stickynote"></i><a href="">常见问题<b>(3)</b></a></li>
+                <li><i class="iconfont icon-user"></i><a href="">客服服务<b>(31)</b></a></li>
+                <li><i class="iconfont icon-shoppingcart"></i><a href="">购物指南<b>(33)</b></a></li>
+                <li><i class="iconfont icon-desktop"></i><a href="">配送方式<b>(333)</b></a></li>
+                <li><i class="iconfont icon-creditcard"></i><a href="">支付方式<b>(3666)</b></a></li>
+                <li><i class="iconfont icon-diamond"></i><a href="">特色服务<b>(89)</b></a></li>
+                <li><i class="iconfont icon-group"></i><a href="">售后服务<b>(6)</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mees">
+            <div class="messagelist">
+                <div class="messagelistin">
+                    <div class="list-bottom">
+            <span class="left">
+
+                <a href="javascript:;" class="nosee noseebtn" ><i class="iconfont icon-plus1"></i>&nbsp;添加分类</a>
+          <a  class="del delbtn"><i class="iconfont icon-cc-trash"></i>&nbsp;批量删除</a>
+            </span>
+                        <span class="right">
+                共:
+                <b>5</b>
+                分类
+            </span>
+                    </div>
+                    <!--留言列表-->
+                    <div class="book-list">
+                        <div class="book-list-top">
+                            <div class="show">
+                                <label class="label1">每页显示条数：
+                                    <select class="sel">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="search">
+                                <label class="label1 lab">
+                                    搜索：<input type="text" class="sec">
+                                </label>
+                            </div>
+                        </div>
+                        <table  cellspacing="0" cellpadding="0">
+                            <thead>
+                            <tr>
+                                <th width="25"rowspan="1"colspan="1">
+                                    <label class="abb">
+                                        <input type="checkbox" id="myCheck3" class="check">
+                                        <label for="myCheck3"></label>
+                                    </label>
+                                </th>
+                                <th>ID</th>
+                                <th>排序</th>
+                                <th>所属分类</th>
+                                <th>标题</th>
+                                <th width="3000">简介</th>
+                                <th>添加时间</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody class="tt">
+                            <tr ng-repeat="p in list">
+                                <td>
+                                    <input type="checkbox" id="myCheck2" class="check">
+                                    <label for="myCheck2"></label>
+                                </td>
+                                <td class="td2">{{p.id}}</td>
+                                <td class="td3"><i class="tdii">{{p.name}}</i></td>
+                                <td class="td3"><i class="tdii">{{p.phone}}</i></td>
+                                <td class="td3"><i class="tdii">{{p.mail}}</i></td>
+                                <td><a href="javascript:;" class="word">{{p.message}}</a></td>
+                                <td class="td4">{{p.date}}</td>
+                                <td class="td4">{{p.type}}</td>
+                                <td class="td6">
+                                    <a href="javascript:;" title="编辑" class="arep areply"><i class="iconfont icon-edit"></i></a>
+                                    <a ng-click="del($index)" title="删除" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="bottom">
+                            <div class="bottom-left">
+                                <div class="tt">第 1 到 3 条记录，共 3条</div>
+                            </div>
+                            <div class="bottom-right">
+                                <ul class="left-l">
+                                    <li><a href="javascript:;" class="on">上一页</a></li>
+                                    <li><a href="javascript:;" class="one">1</a></li>
+                                    <li><a href="javascript:;" class="down">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+</div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure imsure">确定</button>
+                <button class="m-btn-cancel imcancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <link rel="stylesheet" href="assets/css/articlemanagement/article-list.css">

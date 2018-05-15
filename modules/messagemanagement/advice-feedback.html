@@ -1,0 +1,103 @@
+<div id="mees">
+<div class="messagelist">
+    <div class="messagelistin">
+        <div class="message-data-list">
+            <ul class="list">
+                <li><label class="label">留言</label><input type="text" class="leave-word" placeholder="输入留言信息"></li>
+                <li><label class="label">时间</label><input type="date" class="date"></li>
+                <li><button class="seebutton">查询</button></li>
+            </ul>
+        </div>
+        <div class="list-bottom">
+            <span class="left">
+                <a ng-click="Alldel($index)" class="del delbtn"><i class="iconfont icon-cc-trash"></i>&nbsp;批量删除</a>
+                <a href="javascript:;" class="seew seewbtn"><i class="iconfont icon-ok"></i>&nbsp;已浏览</a>
+                <a href="javascript:;" class="nosee noseebtn" ><i class="iconfont icon-close"></i>&nbsp;未浏览</a>
+                <a  class="sug sugg" ><i class="iconfont icon-feed"></i>建议</a>
+                <a href="javascript:;" class="com comm" ><i class="iconfont icon-feed"></i>&nbsp;投诉</a>
+            </span>
+            <span class="right">
+                共:
+                <b>2337</b>
+                条
+            </span>
+        </div>
+        <!--留言列表-->
+        <div class="book-list">
+            <div class="book-list-top">
+                <div class="show">
+                    <label class="label1">每页显示条数：
+                        <select class="sel">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="search">
+                    <label class="label1 lab">
+                        搜索：<input type="text" class="sec">
+                    </label>
+                </div>
+            </div>
+            <table  cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                    <th width="25"rowspan="1"colspan="1">
+                        <input type="checkbox" id="myCheck" class="check">
+                        <label for="myCheck"></label>
+                    </th>
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>电话</th>
+                    <th>邮箱</th>
+                    <th>留言内容</th>
+                    <th>时间</th>
+                    <th>状态</th>
+                    <th>类型</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="p in lists">
+                    <td>
+                        <input type="checkbox" id="myCheck1" class="check">
+                        <label for="myCheck1"></label>
+                    </td>
+                    <td class="td2">{{p.id}}</td>
+                    <td class="td3">{{p.name}}<i class="tdii"></i></td>
+                    <td class="td3"><i class="tdii">{{p.phone}}</i></td>
+                    <td class="td2">{{p.mail}}</td>
+                    <td><a href="javascript:;" class="word">{{p.message}}</a></td>
+                    <td class="td4">{{p.date}}</td>
+                    <td class="td5"><span class="spantd">{{p.state}}</span></td>
+                    <td class="td4" >{{p.type}}</td>
+                    <td class="td6">
+
+                        <a ng-click="del($index)" title="删除" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                        <a ng-click="add($index)" title="回复" class="arep areply"><i class="iconfont icon-envelope"></i></a>
+
+
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+            <div class="bottom">
+                <div class="bottom-left">
+                    <div class="tt">第 1 到 2条记录，共2 条</div>
+                </div>
+                <div class="bottom-right">
+                    <ul class="left-l">
+                        <li><a href="javascript:;" class="on">上一页</a></li>
+                        <li><a href="javascript:;" class="one">1</a></li>
+                        <li><a href="javascript:;" class="down">下一页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<link rel="stylesheet" href="assets/css/messagemanagement/advice-feedback.css">

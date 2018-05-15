@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="assets/css/systemmanagement/system-log.css">
+<div id="mees">
+    <div class="messagelist">
+        <div class="messagelistin">
+            <div class="message-data-list">
+                <ul class="list">
+                    <li><label class="label">名称</label><input type="text" class="leave-word"></li>
+                    <li><label class="label">时间</label><input type="date" class="date"></li>
+                    <li><button class="seebutton"><i class="iconfont icon-search"></i>查询</button></li>
+                </ul>
+            </div>
+            <!--留言列表-->
+            <div class="book-list">
+                <div class="book-list-top">
+                    <div class="show">
+                        <label class="label1">每页显示条数：
+                            <select class="sel">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search">
+                        <label class="label1 lab">
+                            搜索：<input type="text" class="sec">
+                        </label>
+                    </div>
+                </div>
+                <table  cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>登录用户</th>
+                        <th>角色</th>
+                        <th>操作内容</th>
+                        <th>操作时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="p in logsnum">
+                        <td class="td2">{{p.id}}</td>
+                        <td class="td3"><i class="tdii">{{p.loginname}}</i></td>
+                        <td class="td3"><i class="tdii">{{p.part}}</i></td>
+                        <td><a href="javascript:;" class="word">{{p.content}}</a></td>
+                        <td class="td4">{{p.date}}</td>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+                <div class="bottom">
+                    <div class="bottom-left">
+                        <div class="tt">第 1 到 7条记录，共 7条</div>
+                    </div>
+                    <div class="bottom-right">
+                        <ul class="left-l">
+                            <li><a href="javascript:;" class="on">上一页</a></li>
+                            <li><a href="javascript:;" class="one">1</a></li>
+                            <li><a href="javascript:;" class="down">下一页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

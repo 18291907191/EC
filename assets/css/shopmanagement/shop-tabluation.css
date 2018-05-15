@@ -1,0 +1,255 @@
+.tab-content{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+.tab-content .product-type{
+    flex: 1;
+    width:100%;
+    display: flex;
+}
+.tab-content .product-type .product-left{
+    height:100%;
+    width:219px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+.tab-content .product-left h2{
+    width:100%;
+    background: #62a8d1;
+    font-size:16px;
+    color:#fff;
+    line-height: 40px;
+    text-indent: 12px;
+    font-weight: normal;
+    height:40px;
+}
+.tab-content .product-left .adverlist{
+    box-sizing: border-box;
+    flex: 1;
+    width:100%;
+    overflow-y: auto;
+}
+.tab-content .product-left .adverlist li{
+    line-height:34px;
+    margin-left:10px;
+}
+.tab-content .product-left .adverlist li a{
+    color:#333;
+    font-size: 12px;
+}
+.tab-content .product-left .adverlist li a:hover{
+    text-decoration: underline;
+    color:#F90;
+}
+.tab-content .product-left .adverlist i{
+    margin-right: 5px;
+}
+.tab-content .product-left .adverlist .icon-list{
+    color:orange;
+    vertical-align: middle;
+}
+.tab-content .product-left .adverlist .icon-shopping-bag{
+    color:purple;
+}
+.tab-content .product-type .product-right{
+    flex:1;
+    height:100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.tab-content .product-left .none{
+    display: block;
+    width: 23px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right:0px;
+    top:50%;
+    border-radius-topleft: 5px;
+    border-radius-bottomleft: 5px;
+    background:url(../../images/products/leftnone.jpg) no-repeat;
+}
+.tab-content .product-right .bebig{
+    display: block;
+    width: 23px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left:0px;
+    top:50%;
+    border-radius-topleft: 5px;
+    border-radius-bottomleft: 5px;
+    background:url(../../images/products/rightshow.jpg) no-repeat;
+    opacity: 0;
+}
+.tab-content .advertise-list{
+    width:100%;
+    height:48px;
+    border:1px solid #dddddd;
+    padding:7px 5px;
+    box-sizing: border-box;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    clear: both;
+}
+.tab-content .advertise-list .number{
+    color:#393939;
+    flex: 1;
+}
+.tab-content .advertise-list .number p{
+    float: right;
+    font-size: 12px;
+}
+.tab-content .advertise-list li{
+    width:101px;
+    height:36px;
+    line-height: 36px;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+}
+.tab-content .advertise-list .add{
+    border-radius: 3px;
+    display: block;
+    background: #ffb752;
+    color:#fff;
+    font-size: 14px;
+    width:101px;
+    height:36px;
+}
+.tab-content .advertise-list .delete{
+    background: #d15b47;
+    margin-left: 9px;
+}
+.tab-content .product-right .show-con{
+    width:100%;
+    line-height: 53px;
+    font-size: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+.tab-content .show-con .type-num{
+    text-indent: 12px;
+    float: left;
+}
+.tab-content .show-con label{
+    float: right;
+}
+.tab-content .show-con label input{
+    color: #858585;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    margin-left: 10px;
+    width:163px;
+    height:28px;
+    outline: none;
+    text-indent: 4px;
+}
+.tab-content .show-con label input:focus{
+    border: 1px solid #f59942;
+}
+.tab-content .tablediv{
+    flex: 1;
+    width:100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+}
+.tab-content .tablediv .type-table{
+    width:1366px;
+    border-collapse: collapse;
+    font-size: 12px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.tab-content .tablediv .type-table tr{
+    height:36px;
+}
+.tab-content .tablediv .type-table th{
+    color:#307ecc;
+    border:1px solid #ddd;
+    background: #f2f2f2;
+    padding:8px;
+}
+.tab-content .tablediv .type-table td{
+    color:#393939;
+    padding:8px;
+    border:1px solid #ddd;
+    text-align: center;
+}
+.tab-content .tablediv .type-table td a{
+    color:#393939;
+}
+.tab-content .tablediv .type-table .operate a{
+    width:25%;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color:#fff;
+    font-size: 12px;
+}
+.tab-content .tablediv .type-table .operate a:nth-of-type(1){
+    background: #d15b47;
+}
+.tab-content .tablediv .type-content .product-right .page{
+    width:100%;
+    height:36px;
+    padding:12px 0;
+}
+.tab-content  .shop-info{
+    width:100%;
+    height:102px;
+    margin-top:20px;
+    clear: both;
+    overflow: hidden;
+}
+.tab-content  .shop-info .shopinfo-list{
+    width:100%;
+    display: flex;
+    font-size:14px;
+    flex-wrap: wrap;
+}
+.tab-content  .shop-info .shopinfo-list li{
+    width:30%;
+    display: flex;
+    /*line-height: 21px;*/
+    margin-right: 20px;
+}
+.tab-content  .shop-info .shopinfo-list label{
+    display: inline-block;
+    text-align: right;
+    width:80px;
+}
+.tab-content  .shop-info .shopinfo-list input{
+    color: #858585;
+    border: 1px solid #d5d5d5;
+    padding: 5px 4px;
+    margin-left: 10px;
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: inherit;
+    height:14px;
+    margin-bottom: 15px;
+}
+.tab-content  .shop-info .shopinfo-list select{
+    margin-left: 10px;
+    color: #858585;
+    border: 1px solid #d5d5d5;
+    font-size: 14px;
+    font-family: inherit;
+    height:30px;
+    line-height: 30px;
+    width:150px;
+}

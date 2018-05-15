@@ -1,0 +1,145 @@
+<div class="tab-content">
+    <div class="product-type">
+        <div class="product-left">
+            <h2>店铺分类</h2>
+            <ul class="adverlist">
+                <li><i class="iconfont icon-list"></i><a href="javascript:;">全部</a></li>
+                <li><i class="iconfont icon-shopping-bag"></i><a href="javascript:;">食品类</a></li>
+                <li><i class="iconfont icon-shopping-bag"></i><a href="javascript:;">保健品类</a></li>
+                <li><i class="iconfont icon-shopping-bag"></i><a href="javascript:;">数码产品</a></li>
+                <li><i class="iconfont icon-shopping-bag"></i><a href="javascript:;">生活产品</a></li>
+                <li><i class="iconfont icon-shopping-bag"></i><a href="javascript:;">床上用品</a></li>
+            </ul>
+            <span class="none"></span>
+        </div>
+        <div class="product-right">
+            <span class="bebig"></span>
+            <div class="shop-info">
+                <ul class="shopinfo-list">
+                   <li>
+                       <label>报表类型</label>
+                       <select>
+                           <option>--选择报表类型--</option>
+                       </select>
+                   </li>
+                    <li>
+                        <label>信息来源</label>
+                        <input type="text" placeholder="信息来源">
+                    </li>
+                    <li>
+                        <label>咨询方式</label>
+                        <input type="text" placeholder="咨询方式">
+                    </li>
+                    <li>
+                        <label>校区</label>
+                        <input type="text" placeholder="校区">
+                    </li>
+                    <li>
+                        <label>添加时间</label>
+                        <input type="text">
+                    </li>
+                </ul>
+            </div>
+            <ul class="advertise-list">
+                <li class="delete"><i class="iconfont icon-cc-trash"></i>批量删除</li>
+                <div class="number"><p>共：条广告</p></div>
+            </ul>
+            <div class="show-con">
+                <p class="type-num">
+                    每页显示条数：
+                    <select>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                    </select>
+                </p>
+                <label>搜索：<input type="text"></label>
+            </div>
+            <div class="tablediv">
+                <table border="0" cellpadding="0" cellspacing="0" class="type-table display" id="table_id_example">
+                    <tr>
+                        <th width="20px" class="quan"><input type="checkbox"></th>
+                        <th width="62px">排序</th>
+                        <th width="162px">店铺名称</th>
+                        <th width="102px">所属分类</th>
+                        <th width="102px">店铺类型</th>
+                        <th width="409px">简介</th>
+                        <th width="132px">添加时间</th>
+                        <th width="82px">审核状态</th>
+                        <th width="132px">操作</th>
+                    </tr>
+                    <tr>
+                        <td width="20px"><input type="checkbox"></td>
+                        <td width="62px">1</td>
+                        <td width="162px">三天数码旗舰店</td>
+                        <td width="102px">数码</td>
+                        <td width="102px">企业店铺</td>
+                        <td width="409px">泡吧食品旗舰店是福建泡吧食品有限公司商城唯一旗舰店，直营销售...</td>
+                        <td width="132px">2014-6-11 11:11:42</td>
+                        <td width="82px" class=""><a href="javascript:;">通过</a></td>
+                        <td width="132px" class="operate">
+                            <a href="javascript:;" class="btn2"><i class="iconfont icon-cc-trash"></i></a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="page"></div>
+            </div>
+        </div>
+    </div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure imsure">确定</button>
+                <button class="m-btn-cancel imcancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>

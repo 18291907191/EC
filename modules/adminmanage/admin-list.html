@@ -1,0 +1,151 @@
+<div class="type-content">
+    <div class="find">
+        <label>管理员名称<input type="text" placeholder="输入品牌名称"></label>
+        <label>添加时间<input type="text" class="date"></label>
+        <button type="submit"><i class="iconfont icon-search"></i>查询</button>
+    </div>
+    <div class="product-con">
+        <ul class="product-list">
+            <li><a href="javascript:;" class="add"><i class="iconfont icon-plus1"></i>添加管理员</a></li>
+            <li class="delete"><a href="javascript:;"><i style="color:#fff;" class="iconfont icon-cc-trash"></i></a>批量删除</li>
+            <div class="number"><p>共：<span>5</span>人</p></div>
+        </ul>
+        <div class="product-type">
+            <div class="product-left">
+                <h2>
+                    管理员分类列表
+                </h2>
+                <ul class="admin-type">
+                    <li><i style="color:#69aa46;" class="iconfont icon-group"></i><a href="javascript:;">全部管理员<span id="allmanage">0</span></a></li>
+                    <li><i style="color:#ff892a;" class="iconfont icon-group"></i><a href="javascript:;">超级管理员<span id="supermanage">0</span></a></li>
+                    <li><i style="color:#ff892a;" class="iconfont icon-group"></i><a href="javascript:;">普通管理员<span id="generalmanage">0</span></a></li>
+                    <li><i style="color:#ff892a;" class="iconfont icon-group"></i><a href="javascript:;">产品编辑管理员<span id="producteditormanage">0</span></a></li>
+                </ul>
+                <span class="none"></span>
+            </div>
+            <div class="product-right">
+                <div class="show-con">
+                    <p class="type-num">
+                        每页显示条数：
+                        <select>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                    </p>
+                    <label>搜索：<input type="text"></label>
+                </div>
+                <div class="messagelistin">
+                    <!--留言列表-->
+                    <div class="book-list">
+                        <table  cellspacing="0" cellpadding="0">
+                            <thead>
+                            <tr>
+                                <th class="quan" width="43px" rowspan="1"colspan="1">
+                                    <input type="checkbox" class="ace">
+                                </th>
+                                <th width="120px" >编号</th>
+                                <th width="120px">用户名</th>
+                                <th width="150px">手机</th>
+                                <th width="180px">邮箱</th>
+                                <th width="184px">创建时间</th>
+                                <th width="100px">等级</th>
+                                <th width="100px">状态</th>
+                                <th width="300px">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="i in adata">
+                                <td >
+                                    <input type="checkbox" class="ace">
+                                </td>
+                                <td class="adminid">{{i.Id}}</td>
+                                <td><i class="tdii">{{i.userfullname}}</i></td>
+                                <td>{{i.usertell}}</td>
+                                <td>{{i.useremail}}</td>
+                                <td>{{i.createtime}}</td>
+                                <td>{{i.userlevel}}</td>
+                                <td class="state"><a ng-if="i.truefalse == 1" class="spantd">已开启</a><a ng-if="i.truefalse == 0" class="spantd">已停用</a></td>
+                                <td class="td6">
+                                    <a href="javascript:;" title="已浏览" class="ase asee"><i class="iconfont icon-ok"></i></a>
+                                    <a href="javascript:;" title="回复" class="arep areply"><i class="iconfont icon-edit"></i></a>
+                                    <a href="javascript:;" title="删除" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="bottom">
+                            <div class="bottom-left">
+                                <div class="tt">第 1 到 1 条记录，共 1 条</div>
+                            </div>
+                            <div class="bottom-right">
+                                <ul class="left-l">
+                                    <li><a href="javascript:;" class="on">上一页</a></li>
+                                    <li><a href="javascript:;" class="one">1</a></li>
+                                    <li><a href="javascript:;" class="down">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="bebig"></span>
+            </div>
+        </div>
+    </div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure imsure">确定</button>
+                <button class="m-btn-cancel imcancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>

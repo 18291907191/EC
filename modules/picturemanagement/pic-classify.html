@@ -1,0 +1,104 @@
+<div class="classify-con">
+    <ul class="advertise-list">
+        <li><a href="" class="add"><i class="iconfont icon-plus1"></i>添加广告</a></li>
+        <li class="delete"><i class="iconfont icon-cc-trash"></i>批量删除</li>
+        <div class="number"><p>共：条广告</p></div>
+    </ul>
+    <div class="show-con">
+        <p class="type-num">
+            每页显示条数：
+            <select>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+            </select>
+        </p>
+        <label>搜索：<input type="text"></label>
+    </div>
+    <div class="tablediv">
+        <table border="0" cellpadding="0" cellspacing="0" class="type-table display" id="table_id_example">
+            <tr>
+                <th width="20px" class="quan"><input type="checkbox"></th>
+                <th width="34px">ID</th>
+                <th width="87px">分类名称</th>
+                <th width="34px">数量</th>
+                <th width="351px">描述</th>
+                <th width="172px">加入时间</th>
+                <th width="55px">状态</th>
+                <th width="247px">操作</th>
+            </tr>
+            <tr>
+                <td width="20px"><input type="checkbox"></td>
+                <td width="34px">1</td>
+                <td width="87px">幻灯片</td>
+                <td width="34px">5</td>
+                <td width="351px">首页顶部广告轮播图，大图区别于其他图片</td>
+                <td width="172px">2014-6-11 11:11:42</td>
+                <td width="55px" class="state"><a href="javascript:;">显示</a></td>
+                <td width="247px" class="operate">
+                    <a href="javascript:;" class="ase"><i class="iconfont icon-ok"></i></a>
+                    <a href="javascript:;" class="arep"><i class="iconfont icon-edit"></i></a>
+                    <a href="javascript:;" class="ddd btn2"><i class="iconfont icon-cc-trash"></i></a>
+                    <a href="javascript:;" class="ad-menu"><i class="iconfont icon-list1"></i></a>
+                </td>
+            </tr>
+        </table>
+        <div class="page"></div>
+    </div>
+    <div class="m-modal">
+        <!--删除-->
+        <div class="m-modal-dialog">
+            <!--头部标题-->
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <!--中间内容-->
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要删除吗？</p>
+            </div>
+            <!--底部信息-->
+            <div class="m-bottom">
+                <button class="m-btn-sure sure-delete">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+        <!--添加-->
+        <div class="m-modal-add">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    确认停用么？
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要停用么</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure imsure">确定</button>
+                <button class="m-btn-cancel imcancel">取消</button>
+            </div>
+        </div>
+        <!--修改-->
+        <div class="m-modal-update">
+            <div class="m-top">
+                <h4 class="m-modal-title">
+                    修改信息
+                </h4>
+                <span class="m-modal-close">&times;</span>
+            </div>
+            <div class="m-middle">
+                <!--content-->
+                <p>确定要修改信息么？</p>
+            </div>
+            <div class="m-bottom">
+                <button class="m-btn-sure">确定</button>
+                <button class="m-btn-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>

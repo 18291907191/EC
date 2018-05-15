@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="assets/css/messagemanagement/message-list.css">
+</head>
+<body>
+<div class="uu">
+<div class="messagelist">
+    <div class="messagelistin">
+        <div class="message-data-list">
+            <ul class="list">
+                <li><label class="label">留言</label><input type="text" class="leave-word" placeholder="输入留言信息"></li>
+                <li><label class="label">时间</label><input type="date" class="date"></li>
+                <li><button class="seebutton"><i class="iconfont icon-search"></i>查询</button></li>
+            </ul>
+        </div>
+        <div class="list-bottom">
+            <span class="left">
+                <a class="del delbtn"><i class="iconfont icon-cc-trash"></i>&nbsp;批量删除</a>
+                <a href="javascript:;" class="seew seewbtn"><i class="iconfont icon-ok"></i>&nbsp;已启用</a>
+                <a href="javascript:;" class="nosee noseebtn" ><i class="iconfont icon-close"></i>&nbsp;未浏览</a>
+            </span>
+            <span class="right">
+                共:
+                <b>2020</b>
+                条
+            </span>
+        </div>
+        <!--留言列表-->
+        <div class="book-list">
+            <div class="book-list-top">
+                <div class="show">
+                    <label class="label1">每页显示条数：
+                        <select class="sel">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="search">
+                    <label class="label1 lab">
+                        搜索：<input type="text" class="sec">
+                    </label>
+                </div>
+            </div>
+            <table  cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                    <th width="25"rowspan="1"colspan="1">
+                        <label class="abb">
+                            <input type="checkbox" id="myCheck" class="check">
+                            <label for="myCheck" class="tt1"></label>
+                        </label>
+                    </th>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>留言内容</th>
+                    <th>时间</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody class="tt">
+                <tr>
+                    <td>
+                        <label class="abb">
+                            <input type="checkbox" id="myCheck1" class="check">
+                            <label for="myCheck1" class="tt1"></label>
+                        </label>
+                    </td>
+                    <td class="td2">1</td>
+                    <td class="td3"><i class="tdii">张小泉</i></td>
+                    <td><a href="javascript:;" class="word">“第二届中国无锡水蜜桃开摘节”同时开幕，为期三个月的蜜桃季全面启动。值此京东“618品质狂欢节”之际，中国特产无锡馆限量上线618份8只装精品水蜜桃，61.8元全国包邮限时抢购。为了保证水蜜桃从枝头到达您的手中依旧鲜甜如初，京东采用递送升级服务，从下单到包装全程冷链运输。</a></td>
+                    <td class="td4">2016-6-11 11:11:42</td>
+                    <td class="td5 state"><a class="spantd">已浏览</a></td>
+                    <td class="td6">
+                        <a href="javascript:;" title="已浏览" class="ase asee"><i class="iconfont icon-ok"></i></a>
+                        <a href="javascript:;" title="回复" class="arep areply"><i class="iconfont icon-edit"></i></a>
+                        <a href="javascript:;" title="删除" class="btn2 ddd"><i class="iconfont icon-cc-trash"></i></a>
+
+
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="bottom">
+                <div class="bottom-left">
+                    <div class="tt">第 1 到 1 条记录，共 1 条</div>
+                </div>
+                <div class="bottom-right">
+                    <ul class="left-l">
+                        <li><a href="javascript:;" class="on">上一页</a></li>
+                        <li><a href="javascript:;" class="one">1</a></li>
+                        <li><a href="javascript:;" class="down">下一页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="m-modal">
+    <!--删除-->
+    <div class="m-modal-dialog">
+        <!--头部标题-->
+        <div class="m-top">
+            <h4 class="m-modal-title">
+                信息
+            </h4>
+            <span class="m-modal-close">&times;</span>
+        </div>
+        <!--中间内容-->
+        <div class="m-middle">
+            <!--content-->
+            <p>确定要删除吗？</p>
+        </div>
+        <!--底部信息-->
+        <div class="m-bottom">
+            <button class="m-btn-sure sure-delete">确定</button>
+            <button class="m-btn-cancel">取消</button>
+        </div>
+    </div>
+    <!--添加-->
+    <div class="m-modal-add">
+        <div class="m-top">
+            <h4 class="m-modal-title">
+                确认停用么？
+            </h4>
+            <span class="m-modal-close">&times;</span>
+        </div>
+        <div class="m-middle">
+            <!--content-->
+            <p>确定要停用么</p>
+        </div>
+        <div class="m-bottom">
+            <button class="m-btn-sure imsure">确定</button>
+            <button class="m-btn-cancel imcancel">取消</button>
+        </div>
+    </div>
+</div>
+</div>

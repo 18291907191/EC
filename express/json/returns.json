@@ -1,0 +1,92 @@
+[
+      {
+        "ordernumber":"20160705445622",
+        "productname":"华圣高原红富士苹果6枚1.2KG自营水果",
+        "discounts":"14",
+        "dealprice":"456.5"
+      , "dealtime":"2016-7-5",
+        "refund":"145",
+        "num":"1",
+        "dealstate":"重复购买商品需退款一件"
+      },
+      {
+        "ordernumber":"20160705445622",
+        "productname":"中国自产的.2KG自营水果",
+        "discounts":"14",
+        "dealprice":"456.5"
+      , "dealtime":"2016-7-5",
+        "refund":"145",
+        "num":"1",
+        "dealstate":"退货"
+      },
+      {
+        "ordernumber":"20160705445622",
+        "productname":"日本鬼子生产的苹果6枚1.2KG自营水果",
+        "discounts":"14",
+        "dealprice":"456.5"
+      , "dealtime":"2016-7-5",
+        "refund":"145",
+        "num":"1",
+        "dealstate":"重新购买"
+      },
+      {
+        "ordernumber":"20160705445622",
+        "productname":"美国纽约苹果6枚1.2KG自营水果",
+        "discounts":"14",
+        "dealprice":"456.5"
+      , "dealtime":"2016-7-5",
+        "refund":"145",
+        "num":"1",
+        "dealstate":"重复购买商品需退款一件"
+      },
+  {
+    "ordernumber":"20160705445622",
+    "productname":"泰国新加坡苹果6枚1.2KG自营水果",
+    "discounts":"14",
+    "dealprice":"456.5"
+  , "dealtime":"2016-7-5",
+    "refund":"145",
+    "num":"1",
+    "dealstate":"换一件可好"
+  },
+  {
+    "ordernumber":"20160705445622",
+    "productname":"印度尼西亚苹果6枚1.2KG自营水果",
+    "discounts":"14",
+    "dealprice":"456.5"
+  , "dealtime":"2016-7-5",
+    "refund":"145",
+    "num":"1",
+    "dealstate":"商品不好看"
+  },
+  {
+    "ordernumber":"20160705445622",
+    "productname":"马来西亚苹果6枚1.2KG自营水果",
+    "discounts":"14",
+    "dealprice":"456.5"
+  , "dealtime":"2016-7-5",
+    "refund":"145",
+    "num":"1",
+    "dealstate":"我很不满意"
+  },
+  {
+    "ordernumber":"20160705445622",
+    "productname":"陕西西安苹果6枚1.2KG自营水果",
+    "discounts":"14",
+    "dealprice":"456.5"
+  , "dealtime":"2016-7-5",
+    "refund":"145",
+    "num":"1",
+    "dealstate":"我强烈要求换货"
+  },
+  {
+    "ordernumber":"20160705445622",
+    "productname":"我自己的苹果6枚1.2KG自营水果",
+    "discounts":"14",
+    "dealprice":"456.5"
+  , "dealtime":"2016-7-5",
+    "refund":"145",
+    "num":"1",
+    "dealstate":"能换则换"
+  }
+]

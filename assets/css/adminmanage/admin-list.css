@@ -1,0 +1,15 @@
+.admin-type li {
+    line-height: 34px;
+    padding-left: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.admin-type  li a{
+    color: #333;
+}
+.admin-type li:hover a{
+    text-decoration: underline;
+    color: #F90;
+}

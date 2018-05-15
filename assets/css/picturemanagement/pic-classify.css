@@ -1,0 +1,119 @@
+.classify-con{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    padding:15px;
+    box-sizing: border-box;
+}
+.classify-con .advertise-list{
+    width:100%;
+    height:48px;
+    border:1px solid #dddddd;
+    padding:7px 5px;
+    box-sizing: border-box;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.classify-con .advertise-list .number{
+    color:#393939;
+    flex: 1;
+}
+.classify-con .advertise-list .number p{
+    float: right;
+    font-size: 12px;
+}
+.classify-con .advertise-list li{
+    width:101px;
+    height:36px;
+    line-height: 36px;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+}
+.classify-con .advertise-list .add{
+    border-radius: 3px;
+    display: block;
+    background: #ffb752;
+    color:#fff;
+    font-size: 14px;
+    width:101px;
+    height:36px;
+}
+.classify-con .advertise-list .delete{
+    background: #d15b47;
+    margin-left: 9px;
+}
+.classify-con .show-con{
+    width:100%;
+    line-height: 53px;
+    font-size: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+.classify-con .show-con .type-num{
+    text-indent: 12px;
+    float: left;
+}
+.classify-con .show-con label{
+    float: right;
+}
+.classify-con .show-con label input{
+    color: #858585;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    margin-left: 10px;
+    width:163px;
+    height:28px;
+    outline: none;
+    text-indent: 4px;
+}
+.classify-con .show-con label input:focus{
+    border: 1px solid #f59942;
+}
+.classify-con .tablediv{
+    flex: 1;
+    width:100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+}
+.classify-con .tablediv .type-table{
+    width:100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.tablediv .type-table tr{
+    height:36px;
+}
+.classify-con .tablediv .type-table th{
+    color:#307ecc;
+    border:1px solid #ddd;
+    background: #f2f2f2;
+    padding:8px;
+    text-align: center;
+}
+.classify-con .tablediv .type-table td{
+    color:#393939;
+    padding:8px;
+    border:1px solid #ddd;
+    text-align: center;
+}
+.classify-con .tablediv .type-table .operate a:nth-of-type(3){
+    background:#ffb752;
+}
+.classify-con .tablediv .type-table .operate a:nth-of-type(4){
+    background:#d6487e;
+    margin-left:10px;
+    border: 5px solid #d6487e;
+}
+.classify-con .tablediv .type-content .product-right .page{
+    width:100%;
+    height:36px;
+    padding:12px 0;
+}

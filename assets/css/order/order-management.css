@@ -1,0 +1,299 @@
+.orderManagement{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.percent{
+    border: 1px solid #dddddd;
+    margin-top: 16px;
+}
+.shopPercent{
+    height:40px;
+    line-height: 40px;
+    font-size: 18px;
+    border: 1px solid #dddddd;
+    background: #efefef;
+    padding-left: 16px;
+}
+.boxss{
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+    position: relative;
+}
+.tableDiv{
+    flex: 1;
+    overflow: auto;
+    padding-left: 10px;
+}
+
+.orderList{
+    width: 220px;
+    height:100%;
+    position: relative;
+    border-right: 1px solid #dddddd;
+}
+.hideSpan span{
+    background: url(../../images/orderMessage/showhide.png) -14px -30px no-repeat;
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: -1px;
+    top: 50%;
+}
+.showSpan{
+    display: none;
+}
+.showSpan span{
+    background: url(../../images/orderMessage/showhide.png) -46px -30px no-repeat;
+    width: 25px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    left: -1px;
+    top:-38px
+}
+.orderList p{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    background: #62a8d1;
+    padding-left: 12px;
+}
+.orderList li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    background: white;
+    padding-left: 12px;
+}
+.orderList li ul li{
+    padding-left: 0;
+}
+.orderList li{
+    cursor: pointer;
+}
+.orderList li a{
+    color: black;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.orderList li i{
+    color: #c6699f;
+    font-size: 11px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.orderList li a:hover{
+    text-decoration: underline;
+    color: #f90;
+}
+.orderForm{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.orderForm div{
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.orderForm div input{
+    margin-left: 10px;
+    outline: none;
+}
+.orderForm div:first-of-type input{
+    color: #bebebe;
+    text-indent: 10px;
+}
+.orderForm div:nth-of-type(2) input{
+     width: 160px;
+ }
+.orderForm div:nth-of-type(3) input{
+    width: 60px;
+    border-radius: 3px;
+    background: #2b8bcc url(../../images/orderMessage/wicon.jpg) no-repeat 5px center;
+    color: white;
+    text-indent: 15px;
+}
+.orderForm div:last-of-type{
+    clear: both;
+}
+.orderForm div:last-of-type select{
+    width: 70px;
+    height: 27px;
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+.orderForm div input{
+    width: 248px;
+    height: 27px;
+    border: 1px solid #d5d5d5;
+}
+.orderForm div:last-of-type i{
+    margin-left: -20px;
+}
+.managementTable{
+   width: 1260px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.managementTable tr{
+    text-align: center;
+}
+.tableDiv .managementTable th{
+
+    border: 1px solid #dddddd;
+    color: #307ecc;
+}
+.tableDiv .managementTable tr:first-of-type{
+    height: 30px;
+}
+.tableDiv .managementTable tr:nth-of-type(n+2){
+    height: 30px;
+}
+.managementTable td{
+    border: 1px solid #dddddd;
+    padding: 9px 0;
+}
+.managementTable td span{
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+    color: white;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #82af6f!important;
+}
+.managementTable tr:first-of-type{
+    background: #f2f2f2;
+}
+.managementTable tr:nth-of-type(2n){
+    background: #f9f9f9;
+}
+.tdImg{
+    width: 58px;
+    height: 58px;
+    border: 1px solid #dddddd;
+    float: left;
+}
+/*.orderManagement .operate a{*/
+    /*padding: 3px 10px;*/
+    /*display: inline-block;*/
+    /*color: #FFF!important;*/
+    /*border-radius: 3px;*/
+    /*margin-right: 5px;*/
+    /*font-size:12px;*/
+/*}*/
+/*.operate a:nth-of-type(1){*/
+     /*background-color: #87b87f!important;*/
+     /*border-color: #87b87f;*/
+ /*}*/
+/*.operate a:nth-of-type(1):hover{*/
+    /*background-color: #629b58!important;*/
+    /*border-color: #87b87f;*/
+/*}*/
+/*.operate a:nth-of-type(2){*/
+    /*background-color: #6fb3e0!important;*/
+    /*border-color: #6fb3e0;*/
+/*}*/
+/*.operate a:nth-of-type(2):hover{*/
+    /*background-color: #4f99c6!important;*/
+    /*border-color: #6fb3e0;*/
+/*}*/
+/*.operate a:nth-of-type(3){*/
+    /*background-color: #ffb752!important;*/
+    /*border-color: #ffb752;*/
+/*}*/
+/*.operate a:nth-of-type(3):hover{*/
+    /*background-color: #e59729!important;*/
+    /*border-color: #ffb752;*/
+/*}*/
+/*模态窗口*/
+.managementShadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 5;
+    display: none;
+}
+.managementShadowChild{
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    margin-left: -250px;
+    left: 50%;
+    background: white;
+    padding-bottom: 20px;
+}
+.shipments{
+    height: 42px;
+    line-height: 42px;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #333;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.courierName div{
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.courierName div:nth-of-type(1) select{
+    width: 336px;
+    height: 32px;
+    float: left;
+}
+.courierName div:nth-of-type(1) select option{
+    font-size: 14px;
+    color: #333;
+}
+.courierName div:nth-of-type(2) input{
+    width: 140px;
+    height: 28px;
+}
+.form-group{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.form-group label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    padding-right: 10px;
+    float: left;
+}
+.returnA{
+    text-align: center;
+}
+.returnA a{
+    display: inline-block;
+    width: 58px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.returnA a:first-of-type{
+    border-color: #4898d5;
+    background-color: #2e8ded;
+    color: #fff;
+    margin-right: 12px;
+}
+.returnA a:last-of-type{
+    background-color: #f1f1f1;
+    color: #333;
+}

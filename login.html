@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <title>电商后台登录</title>
+</head>
+<body>
+    <div class="logintop">
+        <span>欢迎登录后台管理平台</span>
+        <ul>
+            <li><a href="javascript:;">返回首页</a></li>
+            <li><a href="javascript:;">帮助</a></li>
+            <li><a href="javascript:;">关于</a></li>
+        </ul>
+    </div>
+    <div class="loginbody">
+        <div class="login-container">
+            <div class="center">
+                <img src="assets/images/common/logo1.png"/>
+            </div>
+            <div class="space-6"></div>
+            <div class="position-relative">
+                <div id="login-box" class="login-box widget-box no-border visible">
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <h4 class=" bigger">
+                                管理员登陆
+                            </h4>
+                            <div class="login-icon"><img src="assets/images/common/login.png" /></div>
+                            <form class="login-form" method="post" >
+                                    <ul>
+                                        <li class="frame_style form_error"><label class="user_icon"></label><input name="用户名" autofocus="autofocus" required="required" placeholder="editor" type="text" id="userId"></li>
+                                        <li class="frame_style form_error"><label class="password_icon"></label><input name="密码" placeholder="12345" required="required" type="password" id="userPass"></li>
+                                        <li class="frame_style form_error"><label class="Codes_icon"></label><input id="code_input" name="验证码" placeholder="验证码" required="required" type="text"><div id="v_container" class="Codes_region"></div></li>
+                                    </ul>
+                                    <div class="clearfix">
+                                        <label class="inline">
+                                            <input type="checkbox" id="savepass" class="ace">
+                                            <span class="lbl">保存密码</span>
+                                        </label>
+                                        <div class="login-title">密码缓存机制，将于7天后失效</div>
+                                        <button type="button" class="login-btn btn2" id="my_button">
+                                            登陆
+                                        </button>
+                                    </div>
+                            </form>
+                            <div class="tell">
+                                <span class="tell-sign">通知</span>
+                            </div>
+                            <div class="tell-center">
+                                本网站系统不再对IE8以下浏览器支持，请见谅。
+                            </div>
+                        </div><!-- /widget-main -->
+                    </div><!-- /widget-body -->
+                </div><!-- /login-box -->
+            </div><!-- /position-relative -->
+        </div>
+    </div>
+    <div class="loginbm">版权所有 2016 <a href="javascript:;">XXXX</a></div>
+    <script src="assets/libs/jquery.js"></script>
+    <script src="assets/libs/cookieTools.js"></script>
+    <script src="assets/libs/gVerify.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

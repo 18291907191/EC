@@ -1,0 +1,142 @@
+<div class="content personal-info">
+    <div class="product-type">
+        <div class="product-left">
+            <h2>管理员信息</h2>
+            <ul class="type-lists">
+                <li><label for="usen">用户名：</label><input value="张小泉" id="usen" type="text"><a href="javascript:;" class="up">修改密码</a></li>
+                <li><label for="sex">性别：</label><input value="男" id="sex" type="text"></li>
+                <li><label for="age">年龄：</label><input value="24" id="age" type="text"></li>
+                <li><label for="tell">移动电话：</label><input value="18291907191" id="tell" type="text"></li>
+                <li><label for="email">电子邮箱：</label><input value="1748910489@qq.com" id="email" type="email"></li>
+                <li><label for="qq">QQ：</label><input value="1748910489" id="qq" type="text"></li>
+                <li><label for="root">权限：</label><input value="超级管理员" id="root" type="text"></li>
+                <li><label for="reg">注册时间：</label><input value="" id="reg"  disabled type="text"></li>
+                <li><label><button class="updata">修改</button></label><input id="save-updata" value="保存修改" type="button"></li>
+            </ul>
+        </div>
+        <div class="product-right">
+            <h2 class="add-goods">管理员登记记录</h2>
+            <!--拟态框-->
+            <div class="messagelistin" style="padding-left: 20px;">
+                <!--留言列表-->
+                <div class="book-list">
+                    <div class="book-list-top">
+                        <div class="show">
+                            <label class="label1">每页显示条数：
+                                <select class="sel">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="search">
+                            <label class="label1 lab">
+                                搜索：<input type="text" class="sec">
+                            </label>
+                        </div>
+                    </div>
+                    <table  cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <th class="quan" width="43px" rowspan="1"colspan="1">
+                                    <input type="checkbox" class="ace">
+                            </th>
+                            <th width="70px" >ID</th>
+                            <th width="70px">用户名</th>
+                            <th width="70px">性别</th>
+                            <th width="115px">手机</th>
+                            <th width="150px">邮箱</th>
+                            <th width="205px">客户端ip</th>
+                            <th width="184px">创建时间</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="i in adata">
+                            <td class="quan" >
+                                <input type="checkbox" class="ace">
+                            </td>
+                            <td>{{i.Id}}</td>
+                            <td><i class="tdii">{{i.username}}</i></td>
+                            <td>{{i.usersex}}</td>
+                            <td>{{i.usertell}}</td>
+                            <td>{{i.useremail}}</td>
+                            <td>{{i.userip}}</td>
+                            <td>{{i.createtime}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom">
+                        <div class="bottom-left">
+                            <div class="tt">第 1 到 1 条记录，共 1 条</div>
+                        </div>
+                        <div class="bottom-right">
+                            <ul class="left-l">
+                                <li><a href="javascript:;" class="on">上一页</a></li>
+                                <li><a href="javascript:;" class="one">1</a></li>
+                                <li><a href="javascript:;" class="down">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-modal">
+                <!--删除-->
+                <div class="m-modal-dialog">
+                    <!--头部标题-->
+                    <div class="m-top">
+                        <h4 class="m-modal-title">
+                            信息
+                        </h4>
+                        <span class="m-modal-close">&times;</span>
+                    </div>
+                    <!--中间内容-->
+                    <div class="m-middle">
+                        <!--content-->
+                        <p>确定要删除吗？</p>
+                    </div>
+                    <!--底部信息-->
+                    <div class="m-bottom">
+                        <button class="m-btn-sure sure-delete">确定</button>
+                        <button class="m-btn-cancel">取消</button>
+                    </div>
+                </div>
+                <!--添加-->
+                <div class="m-modal-add">
+                    <div class="m-top">
+                        <h4 class="m-modal-title">
+                            确认停用么？
+                        </h4>
+                        <span class="m-modal-close">&times;</span>
+                    </div>
+                    <div class="m-middle">
+                        <!--content-->
+                        <p>确定要停用么</p>
+                    </div>
+                    <div class="m-bottom">
+                        <button class="m-btn-sure imsure">确定</button>
+                        <button class="m-btn-cancel imcancel">取消</button>
+                    </div>
+                </div>
+                <!--修改-->
+            </div>
+        </div>
+    </div>
+    <div class="m-modal-update">
+        <div class="m-top">
+            <h4 class="m-modal-title">
+                修改信息
+            </h4>
+            <span class="m-modal-close">&times;</span>
+        </div>
+        <div class="m-middle">
+            <!--content-->
+            <p>确定要修改信息么？</p>
+        </div>
+        <div class="m-bottom">
+            <button class="m-btn-sure">确定</button>
+            <button class="m-btn-cancel">取消</button>
+        </div>
+    </div>
+</div>

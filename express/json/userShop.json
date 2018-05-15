@@ -1,0 +1,42 @@
+[
+      {
+        "shopId":"1",
+        "shopPic":"static/images/phone1.jpg",
+        "shopName":"Apple/苹果 MacBook Air 13.3英寸 笔记本轻薄便携电脑固态256G",
+        "shopPrice":"7288",
+        "shopPeriods":"290",
+        "shopPeriodsNmuber":"x3",
+        "shopColor":"red",
+        "status":"代发货"
+      },
+    {
+      "shopId":"2",
+      "shopPic":"static/images/phone2.jpg",
+      "shopName":"Dell/戴尔 G3 i7高配八代标压GTX1060 6G独显吃鸡游戏笔记本电脑",
+      "shopPrice":"466",
+      "shopPeriods":"278",
+      "shopPeriodsNmuber":"x3",
+      "shopColor":"red",
+      "status":"代发货"
+    },
+      {
+        "shopId":"3",
+        "shopPic":"static/images/phone3.jpg",
+        "shopName":"Asus/华硕 飞行堡垒五代 FX80GE8750笔记本电脑吃鸡游戏本学生i7",
+        "shopPrice":"1088",
+        "shopPeriods":"489",
+        "shopPeriodsNmuber":"x3",
+        "shopColor":"red",
+        "status":"代发货"
+      },
+      {
+        "shopId":"4",
+        "shopPic":"static/images/phone4.jpg",
+        "shopName":"Lenovo/联想 小新Air14轻薄本学生商务办公笔记本电脑8代I7 MX150",
+         "shopPrice":"4599",
+        "shopPeriods":"117",
+        "shopPeriodsNmuber":"x3",
+        "shopColor":"red",
+        "status":"代发货"
+      }
+]

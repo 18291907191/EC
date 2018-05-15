@@ -1,0 +1,137 @@
+.tab{
+    margin: 15px;
+}
+*{margin:0;padding:0;list-style-type:none;}
+
+a,img{border:0;}
+
+body{font:12px/180% Arial, Helvetica, sans-serif,"宋体";}
+
+a{color:#333;text-decoration:none;}
+
+a:hover{color:#3366cc;}
+
+/* demo */
+
+.demo{}
+
+.demo h2{font-size:16px;height:44px;color:#3366cc;margin-top:20px;}
+
+.demo dl dt{font-size:14px;color:#ff6600;margin-top:30px;font-weight:800;}
+
+.demo dl dt,.demo dl dd{line-height:22px;}
+
+/* tabbtn */
+
+.tabbtn{height:30px;border-bottom: 1px solid #ddd;}
+
+.tabbtn li{
+    float: left;
+    position: relative;
+    margin: 0 0 0 -1px;
+    border-right: 1px solid #858585;
+    border-left: 1px solid #858585;
+    border-top: 1px solid #858585;
+    background: #f5f4f4;}
+
+.tabbtn li a{display:block;float:left;height:30px;line-height:30px;overflow:hidden;width:108px;text-align:center;color:#999;font-size:14px;cursor:pointer;}
+
+.tabbtn li.current{border-left:solid 1px #d5d5d5;border-right:solid 1px #d5d5d5;border-top:solid 1px #c5c5c5;}
+
+.tabbtn li.current a{border-top:solid 2px #3366cc;height:27px;line-height:27px;background:#fff;color:#333333;border-bottom-color: white;border-left: 1px solid #858585 ;}
+
+/* tabcon */
+
+.tabcon{overflow:hidden;}
+
+.tabcon .subbox{position:absolute;/*必要元素*/left:0;top:0;}
+
+.tabcon .sublist{padding:16px 12px;}
+
+/* leftcon */
+
+#leftcon .subbox{width:9999em;}
+
+#leftcon .subbox .sublist{float:left;width:664px;}
+
+/* sublist */
+
+.sublist{padding:10px;}
+
+.sublist li{height:28px;line-height:28px;font-size:12px;}
+.webname{
+    margin-bottom: 20px;
+}
+.add{
+    color: #f63;
+    margin-right: 3px;
+    font-size: 16px;
+}
+label{
+    font-size: 14px;
+    padding-right: 0;
+    text-align: right;
+    line-height: 30px;
+    width: 111px;
+    display: inline-block;
+
+}
+input{
+    color: #858585;
+    background-color: #fff;
+    padding: 7px 4px;
+    margin-left: 10px;
+    line-height: 1.2;
+    font-size: 14px;
+    width: 60%;
+    outline: 0;
+
+}
+.btn22{
+    border: 1px solid #858585;
+    width: 68%;
+}
+input:focus{
+    border: 2px solid #f63;
+
+}
+textarea{
+    width: 75%;
+    resize: none;
+    height: 200px;
+    margin-left: 125px;
+    margin-top: -25px;
+    outline: 0;
+}
+textarea:focus{
+    border: 2px solid #f63;
+
+}
+.button{
+    text-align: center;
+}
+.button a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.save{
+    background: #5cb85c;
+}
+.cancel{
+    background: #bfc6c6;
+}
+.inform{
+    border-radius: 50%;
+    background: red;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 4px;
+    line-height: 15px;
+    opacity: .7;
+}
+.neew{
+    color: red;
+    font-size: 20px;
+}

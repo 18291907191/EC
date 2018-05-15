@@ -1,0 +1,120 @@
+.paymentMethod{
+    width: 100%;
+    padding: 0 15px;
+}
+.rightPay{
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 0;
+    text-align: center;
+    color: #b94a48;
+    background: #f2dede;
+    border-color: #eed3d7;
+    padding-right: 20px;
+}
+.rightPay span{
+    float: right;
+    font-size: 30px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+.addpay{
+    padding: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+}
+.addpay a{
+    padding: 3px 10px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color:white;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25)!important;
+    border: 5px solid #FFF;
+    background-color: #428bca!important;
+    border-color: #428bca;
+    border-radius: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.payType{
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+}
+.payType p{
+    padding-left: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #dddddd;
+    height: 40px;
+    line-height: 40px;
+    color: #333333;
+    background-image: linear-gradient(to bottom,#ffffff 0,#ededed 100%)!important;
+}
+.listUl{
+    width: 270px;
+    border: 1px solid #dddddd;
+    margin: 5px;
+    float: left;
+}
+.listUl li:nth-of-type(1){
+    height: 40px;
+    line-height: 40px;
+    background-color: #00a5e5;
+    color: #ffffff;
+    text-align: center;
+}
+.listUl li:nth-of-type(2) img{
+    width: 268px;
+    height: 150px;
+    display: block;
+}
+.listUl li:nth-of-type(3){
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    text-align: left;
+    height: 90px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.listUl li:nth-of-type(4){
+    text-align: center;
+    padding: 12px 0;
+}
+.listUl li:nth-of-type(4) label{
+}
+.listUl li:nth-of-type(4) label input{
+    vertical-align: middle;
+}
+.listUl li:nth-of-type(5){
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #dddddd;
+}
+.listUl li:nth-of-type(5) a{
+    padding: 3px 10px;
+    display: inline-block;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #FFF!important;
+    background-image: none!important;
+    border: 5px solid #FFF;
+    border-radius: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 3px;
+    -ms-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.listUl li:nth-of-type(5) a:first-of-type{
+    background-color: #d15b47!important;
+    border-color: #d15b47;
+}
+.listUl li:nth-of-type(5) a:last-of-type{
+    background-color: #87b87f!important;
+    border-color: #87b87f;
+}

@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="assets/css/articlemanagement/classify-management.css">
+<div id="mees">
+    <div class="messagelist">
+        <div class="messagelistin">
+            <div class="list-bottom">
+            <span class="left">
+
+                <a href="javascript:;" class="nosee noseebtn" ><i class="iconfont icon-plus1"></i>&nbsp;添加分类</a>
+          <a ng-click="Alldel($index)" class="del delbtn"><i class="iconfont icon-cc-trash"></i>&nbsp;批量删除</a>
+            </span>
+                <span class="right">
+                共:
+                <b>5</b>
+                分类
+            </span>
+            </div>
+            <!--留言列表-->
+            <div class="book-list">
+                <div class="book-list-top">
+                    <div class="show">
+                        <label class="label1">每页显示条数：
+                            <select class="sel">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="search">
+                        <label class="label1 lab">
+                            搜索：<input type="text" class="sec">
+                        </label>
+                    </div>
+                </div>
+                <table  cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th width="25"rowspan="1"colspan="1">
+                            <input type="checkbox" id="myCheck" class="check">
+                            <label for="myCheck"></label>
+                        </th>
+                        <th>ID</th>
+                        <th>排序</th>
+                        <th>分类名称</th>
+                        <th width="3000">简介</th>
+                        <th>添加时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="p in classify">
+                        <td>
+                            <input type="checkbox" id="myCheck1" class="check">
+                            <label for="myCheck1"></label>
+                        </td>
+                        <td class="td2">{{p.id}}</td>
+                        <td class="td3"><i class="tdii">{{p.rank}}</i></td>
+                        <td class="td3"><i class="tdii">{{p.class}}</i></td>
+                        <td><a href="javascript:;" class="word">{{p.message}}</a></td>
+                        <td class="td4">{{p.date}}</td>
+                        <td class="td4">{{p.state}}</td>
+                        <td class="td6">
+                            <a href="javascript:;" title="编辑" class="arep areply"><i class="iconfont icon-edit"></i></a>
+                            <a ng-click="del($index)" title="删除" class="btnn ddd"><i class="iconfont icon-cc-trash"></i></a>
+
+
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="bottom">
+                    <div class="bottom-left">
+                        <div class="tt">第 1 到 4 条记录，共 4条</div>
+                    </div>
+                    <div class="bottom-right">
+                        <ul class="left-l">
+                            <li><a href="javascript:;" class="on">上一页</a></li>
+                            <li><a href="javascript:;" class="one">1</a></li>
+                            <li><a href="javascript:;" class="down">下一页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-modal">
+            <div class="m-modal-dialog">
+                <div class="m-top">
+                    <h4 class="m-modal-title">
+                        信息
+                    </h4>
+                    <span class="m-modal-close">&times;</span>
+                </div>
+                <div class="m-middle">
+                    <!--content-->
+                    <p>确定要删除吗？</p>
+
+                </div>
+                <div class="m-bottom">
+                    <button class="m-btn-sure">确定</button>
+                    <button class="m-btn-cancel">取消</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
